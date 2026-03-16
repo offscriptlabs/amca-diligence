@@ -3,7 +3,7 @@
    ══════════════════════════════════════════════════════════ */
 
 // ── FUND CALCULATOR ──
-const FUND_SIZE = 65; // $M - fixed
+const FUND_SIZE = 5; // $M - fixed
 
 // EBITDA figures from model for fixed scenario table
 const FIXED_EBITDA = { bear28: 53, base30: 172, base32: 350, bull32: 350, bull35: 725 };
@@ -67,7 +67,7 @@ function setMult(v) {
 function calc() {
   const pre    = parseFloat(document.getElementById('inp-pre').value)   || 850;
   const round  = parseFloat(document.getElementById('inp-round').value) || 150;
-  const check  = parseFloat(document.getElementById('inp-check').value) || 65;
+  const check  = parseFloat(document.getElementById('inp-check').value) || 5;
   const ebitda = parseFloat(document.getElementById('inp-ebitda').value)|| 172;
   const mult   = parseFloat(document.getElementById('inp-mult').value)  || 20;
   const years  = parseFloat(document.getElementById('inp-years').value) || 4;
